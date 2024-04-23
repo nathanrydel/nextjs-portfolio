@@ -6,6 +6,9 @@ import { PROJECTS } from "@/lib/data";
 import Project from "./Project";
 import { useSectionInView } from "@/lib/hooks";
 
+/**
+ * Renders the projects section of the website.
+ */
 export default function Projects() {
   const { ref } = useSectionInView("Projects", 0.5);
 

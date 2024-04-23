@@ -13,6 +13,13 @@ export const metadata: Metadata = {
   description: "Nathan Rydel is a Full Stack Software Engineer specializing in React/Nextjs, Low Code, and E-commerce development",
 };
 
+/**
+ * RootLayout component is the main layout component for the application.
+ * It wraps the entire application and provides a consistent layout structure.
+ *
+ * @param children - The children components to be rendered within the layout.
+ * @returns The rendered HTML structure for the application layout.
+ */
 export default function RootLayout({
   children,
 }: Readonly<{

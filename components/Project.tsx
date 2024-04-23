@@ -8,6 +8,15 @@ import { motion, useScroll, useTransform } from "framer-motion";
 
 type ProjectProps = (typeof PROJECTS)[number];
 
+/**
+ * @description A React component that represents a single project.
+ * @param {string} title - The title of the project.
+ * @param {string} imageUrl - The URL of the project's image.
+ * @param {string} description - A brief description of the project.
+ * @param {string} link - The URL of the project's live demo or source code.
+ * @param {string[]} tags - An array of strings representing the project's tags.
+ * @returns {JSX.Element} A JSX element representing the project.
+ */
 export default function Project({ title, imageUrl, description, link, tags }: ProjectProps) {
   const ref = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({

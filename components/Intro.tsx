@@ -11,6 +11,11 @@ import { useSectionInView } from "@/lib/hooks";
 import headshot from "@/public/RydelHeadshot.webp";
 import { useActiveSectionContext } from "@/context/activeSectionContext";
 
+/**
+ * @description This component represents the intro section of the website.
+ * It contains the developer's headshot, a greeting message, and links to their resume, social media profiles, and a contact form.
+ * @returns {JSX.Element} The JSX element representing the intro section.
+ */
 export default function Intro() {
   const { ref } = useSectionInView("Home", 0.5);
   const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
