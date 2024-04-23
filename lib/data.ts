@@ -63,7 +63,32 @@ export const PROJECTS = [
   },
 ];
 
-export const CONTACT = {
-  address: "United States",
-  email: "contact@nathanrydel.dev",
-};
+export const skillsData = [
+  "HTML",
+  "CSS",
+  "JavaScript",
+  "TypeScript",
+  "React",
+  "Next.js",
+  "Node.js",
+  "Git",
+  "Tailwind",
+  "Prisma",
+  "Express",
+  "PostgreSQL",
+  "Python",
+  "Flask",
+  "Bootstrap",
+  "WordPress",
+  "Webflow",
+  "Vite",
+  "Vitest",
+  "Selenium",
+  "AWS",
+  "Azure",
+  "Docker",
+  "Cloudflare",
+  "Notion",
+  "Framer Motion",
+  "Notion"
+] as const;
