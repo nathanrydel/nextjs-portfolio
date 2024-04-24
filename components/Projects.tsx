@@ -5,6 +5,7 @@ import SectionHeading from "./SectionHeading";
 import { PROJECTS } from "@/lib/data";
 import Project from "./Project";
 import { useSectionInView } from "@/lib/hooks";
+import { motion } from "framer-motion";
 
 /**
  * Renders the projects section of the website.
@@ -13,7 +14,14 @@ export default function Projects() {
   const { ref } = useSectionInView("Projects", 0.5);
 
   return (
-    <section ref={ref} id="projects" className="scroll-mt-28 mb-28">
+    <motion.section
+      id="projects"
+      ref={ref}
+      className="mb-28 max-w-[45rem] text-center leading-8 sm:mb-40 scroll-mt-28"
+      initial={{ opacity: 0, y: 100 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ delay: 0.175 }}
+    >
       <SectionHeading>Projects</SectionHeading>
       <div>
         {PROJECTS.map((project) => (
@@ -22,6 +30,6 @@ export default function Projects() {
           </React.Fragment>
         ))}
       </div>
-    </section>
+    </motion.section>
   );
 }
