@@ -128,6 +128,6 @@ export const EXPERIENCES = [
     description:
       "Currently seeking full time opportunities as a Full Stack | Front End | Back End Developer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and PostgreSQL as well as site development in Webflow and Shopify. If you'd like to contact about freelancing oportunties, please feel free to email me below or message me on Fiverr or Upwork.",
     icon: React.createElement(FaReact),
-    date: "present",
+    date: "In Search of Next Role",
   },
 ] as const;
