@@ -1,12 +1,12 @@
 "use client";
 
 import { useRef } from "react";
-import { PROJECTS } from "@/lib/data";
+import { projectsData } from "@/lib/data";
 import Image from "next/image";
 import Link from "next/link";
 import { motion, useScroll, useTransform } from "framer-motion";
 
-type ProjectProps = (typeof PROJECTS)[number];
+type ProjectProps = (typeof projectsData)[number];
 
 /**
  * @description A React component that represents a single project.
