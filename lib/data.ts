@@ -2,6 +2,7 @@ import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { LuGraduationCap } from "react-icons/lu";
 import { FaReact } from "react-icons/fa";
+import { MdWork } from "react-icons/md";
 
 import joblyImg from "@/public/JoblyV2Demo.webp";
 import frienderImg from "@/public/FrienderDemo.webp";
@@ -103,7 +104,7 @@ export const EXPERIENCES = [
     title: "Technical Support Engineer",
     location: "Phoenix, AZ, USA",
     description: "Worked as a Technical Support Engineer for Mend.io and their Security as a Service products. Worked directly with external engineering and dev ops teams and partnered with internal software engineers to support the products.",
-    icon: React.createElement(CgWorkAlt),
+    icon: React.createElement(MdWork),
     date: "Sep 2022 - 2023"
   },
   {
