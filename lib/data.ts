@@ -89,7 +89,6 @@ export const skillsData = [
   "Azure",
   "Docker",
   "Cloudflare",
-  "Notion",
   "Framer Motion",
   "Notion"
 ] as const;
