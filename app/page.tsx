@@ -1,6 +1,7 @@
 import Intro from "@/components/Intro";
 import Projects from "@/components/Projects";
 import SectionDivider from "@/components/SectionDivider";
+import Skills from "@/components/Skills";
 
 /**
  * The main component of the application.
@@ -13,6 +14,7 @@ export default function Home() {
       <Intro />
       <SectionDivider />
       <Projects />
+      <Skills />
     </main>
   );
 }
