@@ -30,15 +30,16 @@ export default function Contact() {
       }}
     >
       <SectionHeading>Contact me</SectionHeading>
-
       <p className="text-gray-700 -mt-6 dark:text-white/80">
         Please contact me directly at{" "}
-        <a className="underline" href="mailto:contact@nathanrydel.dev">
+        <a className="underline" href="mailto:example@gmail.com">
           contact@nathanrydel.dev
         </a>{" "}
-        or through this form.
+        , through this form, or on{" "}
+        <a href="https://www.upwork.com/freelancers/~01bcaf165a818e8816" className="underline" target="_blank">Upwork</a>{" "}
+        or{" "}
+        <a href="https://www.fiverr.com/nathanrydel" target="_blank" className="underline">Fiverr</a>.
       </p>
-
       <form
         className="mt-10 flex flex-col dark:text-black"
         action={async (formData) => {
