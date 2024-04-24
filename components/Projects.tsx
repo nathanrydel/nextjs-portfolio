@@ -2,7 +2,7 @@
 
 import React from "react";
 import SectionHeading from "./SectionHeading";
-import { PROJECTS } from "@/lib/data";
+import { projectsData } from "@/lib/data";
 import Project from "./Project";
 import { useSectionInView } from "@/lib/hooks";
 import { motion } from "framer-motion";
@@ -24,7 +24,7 @@ export default function Projects() {
     >
       <SectionHeading>Projects</SectionHeading>
       <div>
-        {PROJECTS.map((project) => (
+        {projectsData.map((project) => (
           <React.Fragment key={project.slug}>
             <Project {...project} />
           </React.Fragment>
