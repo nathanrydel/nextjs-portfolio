@@ -69,7 +69,7 @@ export const PROJECTS = [
   },
 ];
 
-export const skillsData = [
+export const SKILLS = [
   "HTML",
   "CSS",
   "JavaScript",
@@ -98,7 +98,14 @@ export const skillsData = [
   "Notion"
 ] as const;
 
-export const experiencesData = [
+export const EXPERIENCES = [
+  {
+    title: "Technical Support Engineer",
+    location: "Phoenix, AZ, USA",
+    description: "Worked as a Technical Support Engineer for Mend.io and their Security as a Service products. Worked directly with external engineering and dev ops teams and partnered with internal software engineers to support the products.",
+    icon: React.createElement(CgWorkAlt),
+    date: "Sep 2022 - 2023"
+  },
   {
     title: "Software Engineer Intern",
     location: "Phoenix, AZ, USA",
