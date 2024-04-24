@@ -7,7 +7,7 @@ import {
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
-import { EXPERIENCES } from "@/lib/data";
+import { experiencesData } from "@/lib/data";
 import { useSectionInView } from "@/lib/hooks";
 import { useTheme } from "@/context/themeContext";
 import { motion } from "framer-motion";
@@ -31,10 +31,9 @@ export default function Experience() {
     >
       <SectionHeading>My experience</SectionHeading>
       <VerticalTimeline lineColor="">
-        {EXPERIENCES.map((exp, index) => (
+        {experiencesData.map((exp, index) => (
           <React.Fragment key={index}>
             <VerticalTimelineElement
-              visible={true}
               contentStyle={{
                 background:
                   theme === "light" ? "#f3f4f6" : "rgba(255, 255, 255, 0.05)",
