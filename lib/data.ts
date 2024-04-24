@@ -1,3 +1,8 @@
+import React from "react";
+import { CgWorkAlt } from "react-icons/cg";
+import { LuGraduationCap } from "react-icons/lu";
+import { FaReact } from "react-icons/fa";
+
 import joblyImg from "@/public/JoblyV2Demo.webp";
 import frienderImg from "@/public/FrienderDemo.webp";
 import warblerImg from "@/public/WarblerDemo.webp";
@@ -91,4 +96,30 @@ export const skillsData = [
   "Cloudflare",
   "Framer Motion",
   "Notion"
+] as const;
+
+export const experiencesData = [
+  {
+    title: "Software Engineer Intern",
+    location: "Phoenix, AZ, USA",
+    description: "Completed an internship while at Rithm School that focused on modernizing Numbers API's front end with TypeScript and Sass, its backend with Python and Flask, and its databse with PostgreSQL.",
+    icon: React.createElement(CgWorkAlt),
+    date: "Feb 2024"
+  },
+  {
+    title: "Graduated Rithm School",
+    location: "Phoenix, AZ, USA",
+    description:
+      "Completed a full-stack web development program with a curriculum is centered around JavaScript/TypeScript and Python in a four-month accelerated learning experience.",
+    icon: React.createElement(LuGraduationCap),
+    date: "March 2024",
+  },
+  {
+    title: "Full-Stack Developer",
+    location: "San Francisco, San Diego, Phoenix, Chicago, New York, European Union",
+    description:
+      "Currently seeking full time opportunities as a Full Stack | Front End | Back End Developer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and PostgreSQL as well as site development in Webflow and Shopify. If you'd like to contact about freelancing oportunties, please feel free to email me below or message me on Fiverr or Upwork.",
+    icon: React.createElement(FaReact),
+    date: "present",
+  },
 ] as const;
