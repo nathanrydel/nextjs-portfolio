@@ -40,6 +40,7 @@ export default function Skills() {
         y: 0,
       }}
       transition={{ delay: 0.2 }}
+      viewport={{ once: true}}
     >
       <SectionHeading>My skills</SectionHeading>
       <ul className="flex flex-wrap justify-center gap-2 text-lg text-gray-800">
