@@ -2,6 +2,11 @@ import React from "react";
 import { FaPaperPlane } from "react-icons/fa";
 import { experimental_useFormStatus as useFormStatus } from "react-dom";
 
+/**
+ * A submit button component that changes its appearance when a form is being submitted.
+ *
+ * @returns A submit button element.
+ */
 export default function SubmitBtn() {
   const { pending } = useFormStatus();
 
