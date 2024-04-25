@@ -24,9 +24,9 @@ export default function About() {
       <SectionHeading>About me</SectionHeading>
       <p className="mb-3">
         After graduating with a degree in{" "}
-        <span className="font-medium">Political Science</span> and a career in technical support engineering, I decided to pursue my passion for programming. I enrolled in a coding bootcamp and learned{" "}
+        <span className="font-medium">Political Science</span> and a career in technical support engineering, I decided to pursue my passion for programming by offering freelancing services in Webflow and Shopify Development. After sometime, I enrolled in a coding bootcamp and learned{" "}
         <span className="font-medium">full-stack web development</span>.{" "}
-        <span className="italic">My favorite part of programming</span> is turning ideas into reality. I <span className="underline">love</span> the feeling of taking a design and bringing it to life. My core stack
+        <span className="italic">My favorite part of programming</span> is turning ideas into reality. I <span className="underline">love</span> the feeling of taking a client's design and bringing it to life. My core stack
         is{" "}
         <span className="font-medium">
           React, Express, Node.js, and PostrgreSQL

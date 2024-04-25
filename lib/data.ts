@@ -40,7 +40,7 @@ export const experiencesData = [
     location: "Phoenix, AZ, USA",
     description: "Find my profiles on Fiverr and Upwork for more information about my services",
     icon: React.createElement(MdWork),
-    date: "Jan 2023 - Present"
+    date: "July 2022 - Present"
   },
   {
     title: "Software Engineer Intern",
