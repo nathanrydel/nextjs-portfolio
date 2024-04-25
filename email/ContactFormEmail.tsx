@@ -17,6 +17,14 @@ type ContactFormEmailProps = {
   senderEmail: string;
 };
 
+/**
+ * ContactFormEmail component is used to display the message and sender's email received from the contact form.
+ *
+ * @param {string} message - The message sent by the user through the contact form.
+ * @param {string} senderEmail - The email address of the user who sent the message.
+ *
+ * @returns {JSX.Element} - A React component that renders the message and sender's email in an email format.
+ */
 export default function ContactFormEmail({
   message,
   senderEmail,

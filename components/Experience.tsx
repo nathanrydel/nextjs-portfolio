@@ -12,6 +12,12 @@ import { useSectionInView } from "@/lib/hooks";
 import { useTheme } from "@/context/themeContext";
 import { motion } from "framer-motion";
 
+/**
+ * The Experience component is responsible for displaying the user's work experience in a timeline format.
+ * It uses the react-vertical-timeline-component library to create a visually appealing timeline.
+ *
+ * @returns {JSX.Element} A JSX element representing the Experience component.
+ */
 export default function Experience() {
   const { ref } = useSectionInView("Experience", 0.75);
   const { theme } = useTheme();
@@ -27,7 +33,7 @@ export default function Experience() {
         y: 0,
       }}
       transition={{ delay: 0.2 }}
-      viewport={{ once: true}}
+      viewport={{ once: true }}
     >
       <SectionHeading>My experience</SectionHeading>
       <VerticalTimeline lineColor="">

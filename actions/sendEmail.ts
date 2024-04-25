@@ -7,6 +7,13 @@ import ContactFormEmail from "@/email/ContactFormEmail";
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 
+/**
+ * The `sendEmail` function is an asynchronous function that sends an email using the Resend API.
+ * It takes a `FormData` object as input, which contains the sender's email and the message to be sent.
+ *
+ * @param formData - A `FormData` object containing the sender's email and the message to be sent.
+ * @returns A promise that resolves to an object containing the email data if successful, or an object containing an error message if there's an error.
+ */
 export const sendEmail = async (formData: FormData) => {
   const senderEmail = formData.get("senderEmail");
   const message = formData.get("message");

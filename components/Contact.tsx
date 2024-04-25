@@ -8,6 +8,10 @@ import { sendEmail } from "@/actions/sendEmail";
 import SubmitBtn from "./SubmitBtn";
 import toast from "react-hot-toast";
 
+/**
+ * Contact component for the website.
+ * @returns A motion.section element with a form for users to send an email.
+ */
 export default function Contact() {
   const { ref } = useSectionInView("Contact");
 
