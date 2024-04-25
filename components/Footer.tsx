@@ -1,7 +1,21 @@
 import React from "react";
 
+/**
+ * Footer component for the website.
+ *
+ * @returns {JSX.Element} The rendered footer element.
+ */
 export default function Footer() {
-  const currentYear = new Date().getFullYear();
+  /**
+   * Get the current year.
+   *
+   * @returns {number} The current year.
+   */
+  const getCurrentYear = (): number => {
+    return new Date().getFullYear();
+  };
+
+  const currentYear = getCurrentYear();
 
   return (
     <footer className="mb-10 px-4 text-center text-gray-500">
