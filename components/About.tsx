@@ -5,6 +5,12 @@ import SectionHeading from "./SectionHeading";
 import { motion } from "framer-motion";
 import { useSectionInView } from "@/lib/hooks";
 
+/**
+ * The About component is a React component that displays information about the developer.
+ * It uses motion from framer-motion to animate the section when it comes into view.
+ *
+ * @returns {JSX.Element} A React component that displays information about the developer.
+ */
 export default function About() {
   const { ref } = useSectionInView("About");
 
