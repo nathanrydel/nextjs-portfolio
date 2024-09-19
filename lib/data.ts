@@ -1,12 +1,13 @@
+import React from "react";
+import { CgWorkAlt } from "react-icons/cg";
+import { FaReact } from "react-icons/fa";
+import { MdWork } from "react-icons/md";
+
 import joblyImg from "@/public/JoblyV2Demo.webp";
 import frienderImg from "@/public/FrienderDemo.webp";
 import warblerImg from "@/public/WarblerDemo.webp";
 
-export const HERO_CONTENT = `I am a passionate Full Stack Developer with a knack for crafting robust and scalable web applications. I have honed my skills in front-end technologies like React and Next.js, as well as back-end technologies like Node.js, Express, Flask, and PostgreSQL. My goal is to leverage my expertise to create innovative solutions that drive business growth and deliver exceptional user experiences.`;
-
-export const ABOUT_TEXT = `I am a dedicated and versatile Full Stack Developer with a passion for creating efficient and user-friendly web applications. I have worked with a variety of technologies, including React, Next.js, Node.js, PostgreSQL, Flask, and Express. My journey in web development began with a deep curiosity for how things work, and it has evolved into a career where I continuously strive to learn and adapt to new challenges. I thrive in collaborative environments and enjoy solving complex problems to deliver high-quality solutions. Outside of coding, I enjoy staying active, exploring new technologies, and contributing to open-source projects.`;
-
-export const LINKS = [
+export const links = [
   {
     name: "Home",
     hash: "#home",
@@ -33,7 +34,33 @@ export const LINKS = [
   },
 ] as const;
 
-export const PROJECTS = [
+export const experiencesData = [
+  {
+    title: "Freelance Developer",
+    location: "Phoenix, AZ, USA",
+    description: "Find my profiles on Fiverr and Upwork for more information about my services",
+    icon: React.createElement(MdWork),
+    date: "July 2022 - Present"
+  },
+  {
+    title: "Software Engineer Intern",
+    location: "Remote USA",
+    description:
+      "Completed an internship while at Rithm School that focused on modernizing Numbers API's front end with TypeScript and Sass, its backend with Python and Flask, and its databse with PostgreSQL.",
+    icon: React.createElement(CgWorkAlt),
+    date: "2024",
+  },
+  {
+    title: "Full-Stack Developer",
+    location: "San Francisco, San Diego, Phoenix, Chicago, New York, Netherlands, Portugal, Germany, France",
+    description:
+      "Currently seeking full time opportunities as a Full Stack | Front End | Back End Developer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and PostgreSQL as well as site development in Webflow and Shopify. If you'd like to contact about freelancing oportunties, please feel free to email me below or message me on Fiverr or Upwork.",
+    icon: React.createElement(FaReact),
+    date: "Current Job Search",
+  },
+] as const;
+
+export const projectsData = [
   {
     slug: "jobly",
     title: "Jobly V2",
@@ -61,7 +88,7 @@ export const PROJECTS = [
     link: "https://rydel-warbler-demo.onrender.com/",
     tags: ["HTML", "CSS", "Bootstrap", "Flask", "PostgreSQL"],
   },
-];
+] as const;
 
 export const skillsData = [
   "HTML",
@@ -73,22 +100,13 @@ export const skillsData = [
   "Node.js",
   "Git",
   "Tailwind",
-  "Prisma",
-  "Express",
+  "Bootstrap",
   "PostgreSQL",
+  "Express",
   "Python",
   "Flask",
-  "Bootstrap",
-  "WordPress",
   "Webflow",
-  "Vite",
-  "Vitest",
-  "Selenium",
-  "AWS",
-  "Azure",
-  "Docker",
-  "Cloudflare",
-  "Notion",
+  "Wordpress",
+  "Shopify",
   "Framer Motion",
-  "Notion"
 ] as const;

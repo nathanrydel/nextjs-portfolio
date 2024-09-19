@@ -7,13 +7,23 @@ import Link from "next/link";
 import { BsArrowRight, BsLinkedin } from "react-icons/bs";
 import { HiDownload } from "react-icons/hi";
 import { FaGithubSquare } from "react-icons/fa";
+import { SiFiverr, SiUpwork } from "react-icons/si";
 import { useSectionInView } from "@/lib/hooks";
 import headshot from "@/public/RydelHeadshot.webp";
+import { useActiveSectionContext } from "@/context/activeSectionContext";
 
+/**
+ * @description This component represents the intro section of the website.
+ * It contains the developer's headshot, a greeting message, and links to their resume, social media profiles, and a contact form.
+ * @returns {JSX.Element} The JSX element representing the intro section.
+ */
 export default function Intro() {
+  const { ref } = useSectionInView("Home", 0.5);
+  const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
 
   return (
     <section
+      ref={ref}
       id="home"
       className="mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-[100rem]"
     >
@@ -58,11 +68,10 @@ export default function Intro() {
         animate={{ opacity: 1, y: 0 }}
       >
         <span className="font-bold">Hello, I'm Nathan.</span> I'm a{" "}
-        <span className="font-bold">Full Stack developer</span> building{" "} sites & apps in TypeScript with <span className="underline">React (Next.js)</span>.
-
+        <span className="font-bold">Full Stack developer</span> building{" "} sites & apps in <Link target="_blank" href="https://nextjs.org/" className="underline">React (Next.js)</Link>, <Link target="_blank" href="https://webflow.com/" className="underline">Webflow</Link>, and <Link target="_blank" href="https://shopify.com/" className="underline">Shopify</Link>.
       </motion.h1>
       <motion.div
-        className="flex flex-col sm:flex-row items-center justify-center gap-2 px-4 text-lg font-medium"
+        className="flex flex-col sm:flex-row items-center justify-center gap-4 px-4 text-lg font-medium"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{
@@ -71,33 +80,54 @@ export default function Intro() {
       >
         <Link
           href="#contact"
-          className="group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition"
+          className="group bg-gray-900 text-gray-200 px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition"
+          onClick={() => {
+            setActiveSection("Contact");
+            setTimeOfLastClick(Date.now());
+          }}
         >
           Contact me here{" "}
-          <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition" />
+          <BsArrowRight className="opacity-90 group-hover:translate-x-1 transition" />
         </Link>
+
         <a
           className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10"
           href="/NathanRydelResume.pdf"
           download
         >
           Download Resume{" "}
-          <HiDownload className="opacity-60 group-hover:translate-y-1 transition" />
+          <HiDownload className="opacity-90 group-hover:translate-y-1 transition" />
         </a>
-        <a
-          className="bg-white p-4 text-gray-700 hover:text-gray-950 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
-          href="https://linkedin.com/in/nathan-rydel"
-          target="_blank"
-        >
-          <BsLinkedin />
-        </a>
-        <a
-          className="bg-white p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
-          href="https://github.com/nathanrydel"
-          target="_blank"
-        >
-          <FaGithubSquare />
-        </a>
+        <div className="flex flex-row items-center justify-center gap-4">
+          <a
+            className="bg-white p-4 text-gray-700 hover:text-gray-950 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
+            href="https://linkedin.com/in/nathan-rydel"
+            target="_blank"
+          >
+            <BsLinkedin />
+          </a>
+          <a
+            className="bg-white p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
+            href="https://github.com/nathanrydel"
+            target="_blank"
+          >
+            <FaGithubSquare />
+          </a>
+          <a
+            className="bg-white p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
+            href="https://www.upwork.com/freelancers/~01bcaf165a818e8816"
+            target="_blank"
+          >
+            <SiUpwork />
+          </a>
+          <a
+            className="bg-white p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
+            href="https://www.fiverr.com/nathanrydel"
+            target="_blank"
+          >
+            <SiFiverr />
+          </a>
+        </div>
       </motion.div>
     </section>
   );
