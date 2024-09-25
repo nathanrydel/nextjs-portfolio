@@ -37,7 +37,7 @@ export const links = [
 export const experiencesData = [
   {
     title: "Freelance Developer",
-    location: "Phoenix, AZ, USA",
+    location: "Remote USA",
     description: "Find my profiles on Fiverr and Upwork for more information about my services",
     icon: React.createElement(MdWork),
     date: "July 2022 - Present"
