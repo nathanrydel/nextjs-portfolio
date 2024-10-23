@@ -106,7 +106,7 @@ export const skillsData = [
   "Python",
   "Flask",
   "Webflow",
-  "Wordpress",
+  "WordPress",
   "Shopify",
   "Framer Motion",
 ] as const;
