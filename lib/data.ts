@@ -2,6 +2,7 @@ import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { MdWork } from "react-icons/md";
+import { FiShield, FiUsers } from "react-icons/fi";
 
 import joblyImg from "@/public/JoblyV2Demo.webp";
 import frienderImg from "@/public/FrienderDemo.webp";
@@ -58,6 +59,22 @@ export const experiencesData = [
     description: "Modernised legacy systems by refactoring databases and APIs, while redesigning frontend components that increased engagement by 13%. Championed TDD (97% test coverage) and built trending-content algorithms using Agile methodologies.",
     icon: React.createElement(FaReact),
     date: "Feb 2024 - March 2024",
+  },
+  {
+    title: "Software Support Engineer",
+    location: "Remote (USA)",
+    classification: "Permanent",
+    description: "Delivered second-tier support for security SaaS platforms, resolving CI/CD and integration issues while maintaining 95% customer satisfaction. Partnered with cross-functional teams to diagnose critical incidents.",
+    icon: React.createElement(FiShield),
+    date: "Sep 2022 - Feb 2023",
+  },
+  {
+    title: "Developer Relations Senior Associate",
+    location: "Remote (USA)",
+    classification: "Permanent",
+    description: "Subject matter expert (SME) for Meta's developer platforms, managing SDK/API support queues and policy compliance. Improved team accuracy by 8% through process optimisations and documentation.",
+    icon: React.createElement(FiUsers),
+    date: "Aug 2020 - Jun 2022",
   },
 ] as const;
 
