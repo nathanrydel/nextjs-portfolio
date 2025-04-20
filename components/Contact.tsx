@@ -7,6 +7,9 @@ import { useSectionInView } from "@/lib/hooks";
 import { sendEmail } from "@/actions/sendEmail";
 import SubmitBtn from "./SubmitBtn";
 import toast from "react-hot-toast";
+import { FaGithubSquare } from "react-icons/fa";
+import { BsLinkedin } from "react-icons/bs";
+import { HiMail } from "react-icons/hi"
 
 /**
  * Contact component for the website.
@@ -20,21 +23,38 @@ export default function Contact() {
       id="contact"
       ref={ref}
       className="mb-20 sm:mb-28 w-[min(100%,38rem)] text-center"
-      initial={{
-        opacity: 0,
-      }}
-      whileInView={{
-        opacity: 1,
-      }}
-      transition={{
-        duration: 1,
-      }}
-      viewport={{
-        once: true,
-      }}
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      transition={{ duration: 1 }}
+      viewport={{ once: true }}
     >
       <SectionHeading>Contact me</SectionHeading>
-      <p className="text-gray-700 -mt-6 dark:text-white/80">
+      <div className="flex flex-row items-center justify-center gap-4">
+        <a
+          className="bg-white p-4 text-gray-700 hover:text-gray-950 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
+          href="mailto:nathanrydel@gmail.com"
+        >
+          <HiMail className="text-[1.35rem]" />
+          <span>Email</span>
+        </a>
+        <a
+          className="bg-white p-4 text-gray-700 hover:text-gray-950 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
+          href="https://linkedin.com/in/nathan-rydel"
+          target="_blank"
+        >
+          <BsLinkedin />
+          <span>LinkedIn</span>
+        </a>
+        <a
+          className="bg-white p-4 text-gray-700 hover:text-gray-950 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
+          href="https://github.com/nathanrydel"
+          target="_blank"
+        >
+          <FaGithubSquare />
+          <span>Github</span>
+        </a>
+      </div>
+      {/* <p className="text-gray-700 -mt-6 dark:text-white/80">
         Please contact me directly at{" "}
         <a className="underline" href="mailto:example@gmail.com">
           contact@nathanrydel.dev
@@ -73,7 +93,7 @@ export default function Contact() {
           maxLength={5000}
         />
         <SubmitBtn />
-      </form>
+      </form> */}
     </motion.section>
   );
 }
