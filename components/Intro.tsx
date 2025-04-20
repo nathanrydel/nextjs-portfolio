@@ -67,9 +67,18 @@ export default function Intro() {
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        <span className="font-bold">Hello, I'm Nathan.</span> I'm a{" "}
-        <span className="font-bold">Full Stack developer</span> building{" "} sites & apps in <Link target="_blank" href="https://nextjs.org/" className="underline">React (Next.js)</Link>, <Link target="_blank" href="https://webflow.com/" className="underline">Webflow</Link>, and <Link target="_blank" href="https://shopify.com/" className="underline">Shopify</Link>.
+        <span className="font-bold">Full-Stack Developer | AI & Cloud Integrations Specialist</span>
       </motion.h1>
+      <motion.h2
+        className="my-5 flex flex-col sm:flex-row items-center justify-center gap-4 px-4 text-xl font-medium"
+        initial={{ opacity: 0, y: 100 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{
+          delay: 0.2,
+        }}
+      >
+          I build scalable, AI-powered web applications with React, Python, and Go. Optimised for performance and real-world impact.
+      </motion.h2>
       <motion.div
         className="flex flex-col sm:flex-row items-center justify-center gap-4 px-4 text-lg font-medium"
         initial={{ opacity: 0, y: 100 }}
@@ -90,15 +99,26 @@ export default function Intro() {
           <BsArrowRight className="opacity-90 group-hover:translate-x-1 transition" />
         </Link>
 
-        <a
+        <Link
+          href="#projects"
+          className="group px-7 py-3 flex items-center gap-2 rounded-full outline outline-2  outline-gray-950  focus:scale-110 hover:scale-110 hover:bg-gray-950 hover:text-gray-200 active:scale-105 transition"
+          onClick={() => {
+            setActiveSection("Projects");
+            setTimeOfLastClick(Date.now());
+          }}
+        >
+          View my projects{" "}
+        </Link>
+
+        {/* <a
           className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10"
           href="/NathanRydelResume.pdf"
           download
         >
           Download Resume{" "}
           <HiDownload className="opacity-90 group-hover:translate-y-1 transition" />
-        </a>
-        <div className="flex flex-row items-center justify-center gap-4">
+        </a> */}
+        {/* <div className="flex flex-row items-center justify-center gap-4">
           <a
             className="bg-white p-4 text-gray-700 hover:text-gray-950 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
             href="https://linkedin.com/in/nathan-rydel"
@@ -112,8 +132,8 @@ export default function Intro() {
             target="_blank"
           >
             <FaGithubSquare />
-          </a>
-          <a
+          </a> */}
+          {/* <a
             className="bg-white p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
             href="https://www.upwork.com/freelancers/~01bcaf165a818e8816"
             target="_blank"
@@ -126,8 +146,8 @@ export default function Intro() {
             target="_blank"
           >
             <SiFiverr />
-          </a>
-        </div>
+          </a> */}
+        {/* </div> */}
       </motion.div>
     </section>
   );
