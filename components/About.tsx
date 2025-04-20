@@ -17,7 +17,7 @@ export default function About() {
   return (
     <motion.section
       ref={ref}
-      className="mb-28 max-w-[45rem] text-center leading-8 sm:mb-40 scroll-mt-28"
+      className="mb-28 max-w-[45rem] leading-8 sm:mb-40 scroll-mt-28"
       initial={{ opacity: 0, y: 100 }}
       whileInView={{
         opacity: 1,
@@ -28,25 +28,33 @@ export default function About() {
       id="about"
     >
       <SectionHeading>About me</SectionHeading>
+      <h3 className="mb-3 text-xl">
+        Full-Stack Developer with <span className="font-medium">3+ years</span> of hands-on experience building:
+      </h3>
+
+      <ul className="mb-5 text-left text-lg list-disc list-inside">
+        <li>
+          <span className="font-medium">AI-integrated web apps</span> (GripLab AI, Python/TypeScript)
+        </li>
+        <li>
+          <span className="font-medium">Scalable backends</span> (REST APIs, Go, C#, SQL)
+        </li>
+        <li>
+          <span className="font-medium">DevOps pipelines</span> (AWS, Docker, CI/CD)
+        </li>
+      </ul>
+
       <p className="mb-3">
-        After graduating with a degree in{" "}
-        <span className="font-medium">Political Science</span> and a career in technical support engineering, I decided to pursue my passion for programming by offering freelancing services in Webflow and Shopify Development. After sometime, I enrolled in a coding bootcamp and learned{" "}
-        <span className="font-medium">full-stack web development</span>.{" "}
-        <span className="italic">My favorite part of programming</span> is turning ideas into reality. I <span className="underline">love</span> the feeling of taking a client's design and bringing it to life. My core stack
-        is{" "}
-        <span className="font-medium">
-          React, Express, Node.js, and PostrgreSQL
-        </span>. I am experienced with TypeScript and Next.js as well as Python and Flask. I am always looking to learn new technologies like the T3 stack or Web3. I am currently looking for a{" "}
-        <span className="font-medium">full-time opportunity</span> as a software
-        developer.
+        Previously <span className="font-medium">7+ years in technical support</span> (Apple, Accenture), giving me a sharp eye for <span className="font-medium">debugging, performance tuning, and user-centric design</span>.
       </p>
 
-      <p>
-        <span className="italic">When I'm not coding</span>, I enjoy playing
-        video games, watching movies, and playing golf. I also enjoy{" "}
-        <span className="font-medium">learning new things</span>. I'm also
-        re-learning how to play the guitar.
-      </p>
+      <p className="font-medium mb-1 mt-6">What I Do</p>
+      <ul className="text-left list-disc list-inside grid grid-cols-1 sm:grid-cols-2 gap-x-4">
+        <li><span className="font-medium">Front-End:</span> React, Vue, Next.js, TailwindCSS</li>
+        <li><span className="font-medium">Back-End:</span> Python, Go, Node.js, RESTful APIs</li>
+        <li><span className="font-medium">DevOps & Cloud:</span> AWS, Azure, Docker, CI/CD</li>
+        <li><span className="font-medium">AI/ML:</span> LLM integrations, data analytics models</li>
+      </ul>
     </motion.section>
   );
 }
