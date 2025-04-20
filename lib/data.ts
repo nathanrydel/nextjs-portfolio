@@ -1,8 +1,6 @@
 import React from "react";
-import { CgWorkAlt } from "react-icons/cg";
-import { FaReact } from "react-icons/fa";
-import { MdWork } from "react-icons/md";
-import { FiShield, FiUsers } from "react-icons/fi";
+import { FiCode, FiShield, FiTerminal, FiUsers } from "react-icons/fi";
+import { GiArtificialIntelligence } from "react-icons/gi";
 
 import joblyImg from "@/public/JoblyV2Demo.webp";
 import frienderImg from "@/public/FrienderDemo.webp";
@@ -42,14 +40,14 @@ export const experiencesData = [
     classification: "Contractor",
     description: "Designing, building, and optimising scalable web applications using React (TypeScript) with Python/Go backends. Focused on clean architecture and performance (e.g., reducing latency by 30%), bridging frontend and backend systems to deliver seamless user experiences while adhering to industry best practices.",
     date: "March 2023 - Present",
-    icon: React.createElement(MdWork),
+    icon: React.createElement(FiCode),
   },
   {
     title: "AI Integrations Developer",
     location: "Remote (UK)",
     classification: "Part-Time",
     description: "Architecting and developing the core MVP for AI agents, designing scalable APIs and infrastructure to bridge research with production. Collaborated with founders to align technical implementation with strategic vision, prioritising maintainability and performance.",
-    icon: React.createElement(CgWorkAlt),
+    icon: React.createElement(GiArtificialIntelligence),
     date: "March 2025 - Present",
   },
   {
@@ -57,7 +55,7 @@ export const experiencesData = [
     location: "Remote (USA)",
     classification: "Internship",
     description: "Modernised legacy systems by refactoring databases and APIs, while redesigning frontend components that increased engagement by 13%. Championed TDD (97% test coverage) and built trending-content algorithms using Agile methodologies.",
-    icon: React.createElement(FaReact),
+    icon: React.createElement(FiTerminal),
     date: "Feb 2024 - March 2024",
   },
   {
@@ -109,22 +107,48 @@ export const projectsData = [
 ] as const;
 
 export const skillsData = [
-  "HTML",
-  "CSS",
-  "JavaScript",
+  // Core Stack (Prioritize what you want to be hired for)
   "TypeScript",
-  "React",
-  "Next.js",
-  "Node.js",
-  "Git",
-  "Tailwind",
-  "Bootstrap",
-  "PostgreSQL",
-  "Express",
   "Python",
-  "Flask",
-  "Webflow",
+  "React (Vite)",
+  "Next",
+  "Node",
+  "Go",
+  "C#",
+
+  // Frontend
+  "Tailwind",
+  "Vue",
+  "Astro",
   "WordPress",
-  "Shopify",
-  "Framer Motion",
+  "Webflow",
+
+  // Backend & APIs
+  "Express",
+  "FastAPI",
+  "RESTful APIs",
+
+  // Databases
+  "PostgreSQL",
+  "MongoDB",
+
+  // DevOps & Cloud (UK-relevant)
+  "AWS",
+  "Docker",
+  "CI/CD",
+  "Azure",
+
+  // Testing
+  "Playwright",
+  "Vitest",
+
+  // AI/ML (If targeting these roles)
+  "LLM Integrations",
+  "TensorFlow",
+  "Pandas",
+
+  // Tools
+  "Git",
+  "Figma",
+  "Postman"
 ] as const;
