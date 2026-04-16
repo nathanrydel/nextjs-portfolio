@@ -5,7 +5,7 @@ import SectionHeading from "./SectionHeading";
 import { projectsData } from "@/lib/data";
 import Project from "./Project";
 import { useSectionInView } from "@/lib/hooks";
-import { motion } from "framer-motion";
+import { motion } from "motion/react";
 
 /**
  * Renders the projects section of the website.

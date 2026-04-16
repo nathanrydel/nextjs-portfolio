@@ -10,7 +10,7 @@ import "react-vertical-timeline-component/style.min.css";
 import { experiencesData } from "@/lib/data";
 import { useSectionInView } from "@/lib/hooks";
 import { useTheme } from "@/context/themeContext";
-import { motion } from "framer-motion";
+import { motion } from "motion/react";
 
 /**
  * The Experience component is responsible for displaying the user's work experience in a timeline format.

@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { motion } from "framer-motion";
+import { motion } from "motion/react";
 
 /**
  * SectionDivider is a React component that renders a motion.div element with specific styles and animations.
