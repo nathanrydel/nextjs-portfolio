@@ -29,18 +29,18 @@ export default function About() {
     >
       <SectionHeading>About me</SectionHeading>
       <h3 className="mb-3 text-xl">
-        Full-Stack Developer with <span className="font-medium">3+ years</span> of hands-on experience building:
+        Full Stack Software Engineer with <span className="font-medium">3+ years</span> building secure, production-grade applications:
       </h3>
 
       <ul className="mb-5 text-left text-lg list-disc list-inside">
         <li>
-          <span className="font-medium">AI-integrated web apps</span> (ChatGPT | Claude | N8N, Python/TypeScript)
+          <span className="font-medium">Secure backends</span> (Django, FastAPI, PostgreSQL, Redis)
         </li>
         <li>
-          <span className="font-medium">Scalable backends</span> (REST APIs, Go, Python, C#, SQL)
+          <span className="font-medium">Modern frontends</span> (React, Next.js, Vue, TypeScript)
         </li>
         <li>
-          <span className="font-medium">DevOps pipelines</span> (AWS, Azure, Docker, CI/CD)
+          <span className="font-medium">Cloud infrastructure</span> (AWS, Azure, Terraform, Docker, CI/CD)
         </li>
       </ul>
 
@@ -50,10 +50,10 @@ export default function About() {
 
       <p className="font-medium mb-1 mt-6">What I Do</p>
       <ul className="text-left list-disc list-inside grid grid-cols-1 sm:grid-cols-2 gap-x-4">
-        <li><span className="font-medium">Front-End:</span> React, Vue, Next.js, TailwindCSS</li>
-        <li><span className="font-medium">Back-End:</span> Python, Go, C#, Node.js, RESTful APIs</li>
-        <li><span className="font-medium">DevOps & Cloud:</span> AWS, Azure, Docker, CI/CD</li>
-        <li><span className="font-medium">AI/ML:</span> LLM integrations, AI Agent, RAG</li>
+        <li><span className="font-medium">Languages:</span> Python, TypeScript, Go, C#</li>
+        <li><span className="font-medium">Frontend:</span> React, Next.js, TanStack Query, TailwindCSS</li>
+        <li><span className="font-medium">Backend & Data:</span> Django, FastAPI, PostgreSQL, Redis</li>
+        <li><span className="font-medium">Infrastructure:</span> Azure, AWS, Terraform, GitHub Actions, Docker</li>
       </ul>
     </motion.section>
   );
