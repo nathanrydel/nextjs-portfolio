@@ -67,7 +67,7 @@ export default function Intro() {
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        <span className="font-bold">Full-Stack Developer | AI & Cloud Integrations Specialist</span>
+        <span className="font-bold">Full Stack Software Engineer</span>
       </motion.h1>
       <motion.h2
         className="my-5 flex flex-col sm:flex-row items-center justify-center gap-4 px-4 text-xl font-medium"
@@ -77,7 +77,7 @@ export default function Intro() {
           delay: 0.2,
         }}
       >
-          I build scalable, AI-powered web applications with React, Python, and Go. Optimised for performance and real-world impact.
+          With 3+ years of experience, I build secure, scalable backends and modern frontends across Python, TypeScript, and Go. From Django APIs to Next.js interfaces — shipped on AWS, Azure, and Vercel.
       </motion.h2>
       <motion.div
         className="flex flex-col sm:flex-row items-center justify-center gap-4 px-4 text-lg font-medium"
@@ -110,14 +110,14 @@ export default function Intro() {
           View my projects{" "}
         </Link>
 
-        {/* <a
+        <a
           className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10"
-          href="/NathanRydelResume.pdf"
+          href="/NathanRydel_Resume_26.pdf"
           download
         >
           Download Resume{" "}
           <HiDownload className="opacity-90 group-hover:translate-y-1 transition" />
-        </a> */}
+        </a>
         {/* <div className="flex flex-row items-center justify-center gap-4">
           <a
             className="bg-white p-4 text-gray-700 hover:text-gray-950 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
