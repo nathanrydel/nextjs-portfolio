@@ -33,6 +33,8 @@ export const links = [
   },
 ] as const;
 
+export const RESUME_PATH = "/NathanRydel_Resume.pdf" as const;
+
 export const experiencesData = [
   {
     title: "Full Stack Software Engineer (Backend Focused)",
@@ -51,7 +53,7 @@ export const experiencesData = [
     date: "Mar 2025 - Aug 2025",
   },
   {
-    title: "Full Stack Software Developer",
+    title: "Full Stack Software Engineer",
     location: "Remote",
     classification: "Contract",
     description: "Built scheduling platforms, admin apps, and marketing sites for clients using React, Next.js, Vue, and FastAPI.",
