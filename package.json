@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev -p 4000",
-    "prebuild": "test -s public/NathanRydel_Resume.pdf || (echo 'Resume PDF missing at public/NathanRydel_Resume.pdf' && exit 1)",
+    "prebuild": "test -s public/NathanRydel_Resume.pdf || { echo 'Resume PDF missing at public/NathanRydel_Resume.pdf' >&2; exit 1; }",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"

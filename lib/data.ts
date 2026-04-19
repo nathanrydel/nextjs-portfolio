@@ -41,8 +41,8 @@ export const experiencesData = [
     location: "Remote",
     classification: "Permanent",
     description: "Building secure RESTful APIs and authentication systems in Django with fully typed Python.",
-    date: "Aug 2025 - Present",
     icon: React.createElement(FiServer),
+    date: "Aug 2025 - Present",
   },
   {
     title: "AI Integrations Developer",
