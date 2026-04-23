@@ -4,19 +4,13 @@ import React from "react";
 import Image from "next/image";
 import { motion } from "motion/react";
 import Link from "next/link";
-import { BsArrowRight, BsLinkedin } from "react-icons/bs";
+import { BsArrowRight } from "react-icons/bs";
 import { HiDownload } from "react-icons/hi";
-import { FaGithubSquare } from "react-icons/fa";
-import { SiFiverr, SiUpwork } from "react-icons/si";
 import { useSectionInView } from "@/lib/hooks";
 import headshot from "@/public/RydelHeadshot.webp";
 import { useActiveSectionContext } from "@/context/activeSectionContext";
+import { RESUME_PATH } from "@/lib/data";
 
-/**
- * @description This component represents the intro section of the website.
- * It contains the developer's headshot, a greeting message, and links to their resume, social media profiles, and a contact form.
- * @returns {JSX.Element} The JSX element representing the intro section.
- */
 export default function Intro() {
   const { ref } = useSectionInView("Home", 0.5);
   const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
@@ -67,7 +61,7 @@ export default function Intro() {
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        <span className="font-bold">Full-Stack Developer | AI & Cloud Integrations Specialist</span>
+        <span className="font-bold">Full Stack Software Engineer</span>
       </motion.h1>
       <motion.h2
         className="my-5 flex flex-col sm:flex-row items-center justify-center gap-4 px-4 text-xl font-medium"
@@ -77,7 +71,7 @@ export default function Intro() {
           delay: 0.2,
         }}
       >
-          I build scalable, AI-powered web applications with React, Python, and Go. Optimised for performance and real-world impact.
+          With 3+ years of experience, I build secure, scalable backends and modern frontends across Python, TypeScript, and Go. From Django APIs to Next.js interfaces — shipped on AWS, Azure, and Vercel.
       </motion.h2>
       <motion.div
         className="flex flex-col sm:flex-row items-center justify-center gap-4 px-4 text-lg font-medium"
@@ -110,44 +104,15 @@ export default function Intro() {
           View my projects{" "}
         </Link>
 
-        {/* <a
+        <a
           className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10"
-          href="/NathanRydelResume.pdf"
+          href={RESUME_PATH}
+          aria-label="Download Nathan Rydel resume (PDF)"
           download
         >
           Download Resume{" "}
-          <HiDownload className="opacity-90 group-hover:translate-y-1 transition" />
-        </a> */}
-        {/* <div className="flex flex-row items-center justify-center gap-4">
-          <a
-            className="bg-white p-4 text-gray-700 hover:text-gray-950 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
-            href="https://linkedin.com/in/nathan-rydel"
-            target="_blank"
-          >
-            <BsLinkedin />
-          </a>
-          <a
-            className="bg-white p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
-            href="https://github.com/nathanrydel"
-            target="_blank"
-          >
-            <FaGithubSquare />
-          </a> */}
-          {/* <a
-            className="bg-white p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
-            href="https://www.upwork.com/freelancers/~01bcaf165a818e8816"
-            target="_blank"
-          >
-            <SiUpwork />
-          </a>
-          <a
-            className="bg-white p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
-            href="https://www.fiverr.com/nathanrydel"
-            target="_blank"
-          >
-            <SiFiverr />
-          </a> */}
-        {/* </div> */}
+          <HiDownload aria-hidden="true" className="opacity-90 group-hover:translate-y-1 transition" />
+        </a>
       </motion.div>
     </section>
   );

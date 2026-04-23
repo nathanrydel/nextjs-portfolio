@@ -1,5 +1,5 @@
 import React from "react";
-import { FiCode, FiShield, FiTerminal, FiUsers } from "react-icons/fi";
+import { FiCode, FiServer, FiShield, FiSmartphone, FiTerminal, FiUsers } from "react-icons/fi";
 import { GiArtificialIntelligence } from "react-icons/gi";
 
 import joblyImg from "@/public/JoblyV2Demo.webp";
@@ -33,46 +33,64 @@ export const links = [
   },
 ] as const;
 
+export const RESUME_PATH = "/NathanRydel_Resume.pdf" as const;
+
 export const experiencesData = [
   {
-    title: "Full Stack Developer",
-    location: "Remote (UK)",
-    classification: "Contractor",
-    description: "Designing, building, and optimising scalable web applications using React (TypeScript) with Python/Go backends. Focused on clean architecture and performance (e.g., reducing latency by 30%), bridging frontend and backend systems to deliver seamless user experiences while adhering to industry best practices.",
-    date: "March 2023 - Present",
-    icon: React.createElement(FiCode),
+    title: "Full Stack Software Engineer (Backend Focused)",
+    location: "Remote",
+    classification: "Permanent",
+    description: "Building secure RESTful APIs and authentication systems in Django with fully typed Python.",
+    icon: React.createElement(FiServer),
+    date: "Aug 2025 - Present",
   },
   {
     title: "AI Integrations Developer",
-    location: "Remote (UK)",
+    location: "Remote",
     classification: "Part-Time",
-    description: "Architecting and developing the core MVP for AI agents, designing scalable APIs and infrastructure to bridge research with production. Collaborated with founders to align technical implementation with strategic vision, prioritising maintainability and performance.",
+    description: "Architected a full stack MVP for a sports tech startup with data pipelines and a ChatGPT-powered RAG system.",
     icon: React.createElement(GiArtificialIntelligence),
-    date: "March 2025 - Present",
+    date: "Mar 2025 - Aug 2025",
   },
   {
-    title: "Software Engineer Intern",
-    location: "Remote (USA)",
+    title: "Full Stack Software Engineer",
+    location: "Remote",
+    classification: "Contract",
+    description: "Built scheduling platforms, admin apps, and marketing sites for clients using React, Next.js, Vue, and FastAPI.",
+    icon: React.createElement(FiCode),
+    date: "Mar 2023 - Aug 2025",
+  },
+  {
+    title: "Software Development Intern",
+    location: "Remote",
     classification: "Internship",
-    description: "Modernised legacy systems by refactoring databases and APIs, while redesigning frontend components that increased engagement by 13%. Championed TDD (97% test coverage) and built trending-content algorithms using Agile methodologies.",
+    description: "Modernised legacy systems and led the team to 97% test coverage through strict TDD and Agile practices.",
     icon: React.createElement(FiTerminal),
-    date: "Feb 2024 - March 2024",
+    date: "Feb 2024 - Mar 2024",
   },
   {
     title: "Software Support Engineer",
-    location: "Remote (USA)",
+    location: "Remote",
     classification: "Permanent",
-    description: "Delivered second-tier support for security SaaS platforms, resolving CI/CD and integration issues while maintaining 95% customer satisfaction. Partnered with cross-functional teams to diagnose critical incidents.",
+    description: "Delivered second-tier support for security-focused SaaS products, resolving CI/CD integration issues.",
     icon: React.createElement(FiShield),
     date: "Sep 2022 - Feb 2023",
   },
   {
-    title: "Developer Relations Senior Associate",
-    location: "Remote (USA)",
+    title: "Developer Operations & Relations Platform Senior Associate",
+    location: "Austin, TX (Remote)",
     classification: "Permanent",
-    description: "Subject matter expert (SME) for Meta's developer platforms, managing SDK/API support queues and policy compliance. Improved team accuracy by 8% through process optimisations and documentation.",
+    description: "SME for Meta's developer platforms, resolving SDK integration, API throttling, and compliance issues.",
     icon: React.createElement(FiUsers),
     date: "Aug 2020 - Jun 2022",
+  },
+  {
+    title: "AppleCare Senior Associate",
+    location: "Austin, TX",
+    classification: "Permanent",
+    description: "Managed escalated iOS and macOS support cases, leading a team of 3 and exceeding 95% CSAT targets.",
+    icon: React.createElement(FiSmartphone),
+    date: "Jan 2018 - Aug 2020",
   },
 ] as const;
 
